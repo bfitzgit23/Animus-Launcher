@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+   <head>
+      <meta charset = "UTF-8">
+      <title>SWG Animus: Launcher</title>
+      <link rel = "stylesheet" href = "./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <link rel = "stylesheet" href = "./bower_components/components-font-awesome/css/fontawesome.min.css" />
+      <link rel = "stylesheet" href = "./bower_components/components-font-awesome/css/brands.min.css" />
+      <link rel = "stylesheet" href = "./bower_components/components-font-awesome/css/solid.min.css" />
+   </head>
+   <body style="body-bg">
+      <div class = "container">
+        <h1 class="display-4" style="color:white;text-align:center;">SWG Animus</h1>
+        <div class="row">
+          <div class="col text-center">
+            <img src="assets/animus-logo.png" style="height:150px;">
+          </div>
+        </div>
+        
+
+        <header class="p-3 text-bg-dark">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="game-settings-link nav-link px-2 text-white"><i class="fa-solid fa-gears"></i> Game Settings</a></li>
+                <li><a href="#" class="discord-link nav-link px-2 text-white"><i class="fa-brands fa-discord"></i> Discord</a></li>
+                <li><a href="#" class="website-link nav-link px-2 text-white"><i class="fa-solid fa-arrow-up-right-from-square"></i> Website</a></li>
+              </ul>
+
+              <div class="text-end">
+                <a href="#" class="website-register-link btn btn-outline-light me-2 btn-lg">Register</a>
+                <button class="btn btn-primary btn-play btn-lg" disabled>Play</button>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row gamesettings" style="display:none;">
+              <div class="col-12 mb-3">
+                <label for="gamepath" class="form-label">Game Path</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="gamepath" required>
+                  <button class="btn btn-outline-light gamepath-browser" type="button">Browse</button>
+                </div>
+              </div>
+              <div class="col-12 mb-3" style="display:none;">
+                <label for="fps" class="form-label">FPS</label>
+                <input type="number" class="form-control" id="fps" min="30" max="240" required>
+              </div>
+              <div class="col-12 mb-3">
+                <label for="zoom" class="form-label">Camera Zoom Level</label>
+                <input type="number" class="form-control" id="zoom" min="1" max="10" required>
+              </div>
+              <div class="col-12 mb-3">
+                <button type="submit" class="btn-save-settings btn btn-primary">Save Settings</button>
+              </div>
+            </div>
+
+            <div class="row patching" style="display:none;">
+              <div class="col-12">
+                <p class="h6"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating..</p>
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-patching-main progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row patching-success" style="display:none;">
+              <div class="col-12 text-center">
+                <p class="h4"><i class="fa-solid fa-check"></i> Ready to play!</p>
+              </div>
+            </div>
+
+          </div>
+        </header>
+         <script src = "./view.js" ></script>
+      </div>
+   </body>
+</html>

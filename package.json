@@ -1,0 +1,33 @@
+{
+  "name": "SWG-Animus-Launcher",
+  "version": "1.0.0",
+  "author": "",
+  "authors": "SWG Animus",
+  "description": "SWG Launcher",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^25.9.8"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.6.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.7.0",
+    "random-access-file": "^4.0.7",
+    "request": "^2.88.2"
+  }
+}

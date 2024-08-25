@@ -1,0 +1,1 @@
+# SWG Animus Launcher: an ElectronJS project.
