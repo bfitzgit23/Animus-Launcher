@@ -6,10 +6,11 @@
   "description": "SWG Launcher",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "npm run package",
-    "make": "npm run make"
+    "start": "electron .",
+    "build-win": "electron-builder --win --ia32 -p never",
+    "deploy-win": "electron-builder --win --ia32 -p always",
+    "build-linux": "electron-builder --linux --x64",
+    "build-mac": "electron-builder --mac --x64"
   },
   "license": "ISC",
   "devDependencies": {
