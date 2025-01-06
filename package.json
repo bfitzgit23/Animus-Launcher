@@ -25,6 +25,7 @@
     "follow-redirects": "^1.2.4",
     "random-access-file": "^1.8.1",
     "request": "^2.81.0"
+  },
      "build": {
     "productName": "SWG-PVP-Launcher",
     "win": {
