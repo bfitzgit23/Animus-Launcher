@@ -157,9 +157,9 @@ function save_config() {
 
 function play() {
     // Write config and launch game.
-    fs.writeFileSync(path.join(config.gamepath, "swgemu_login.cfg"), `[ClientGame]\r\nloginServerAddress0=login.swg-animus.com\r\nloginServerPort0=44453\r\nfreeChaseCameraMaximumZoom=${config.zoom}`);
+    fs.writeFileSync(path.join(config.gamepath, "swgemu_login.cfg"), `[ClientGame]\r\nloginServerAddress0=154.12.255.58\r\nloginServerPort0=44453\r\nfreeChaseCameraMaximumZoom=${config.zoom}`);
     var args = ["--",
-        "-s", "ClientGame", "loginServerAddress0=login.swg-animus.com", "loginServerPort0=44453",
+        "-s", "ClientGame", "loginServerAddress0=154.12.255.58", "loginServerPort0=44453",
         "-s", "Station", "gameFeatures=34929",
         "-s", "SwgClient", "allowMultipleInstances=true"];
     var env = Object.create(require('process').env);
@@ -212,15 +212,5 @@ $(".btn-save-settings").click(function(e) {
 
 $(".discord-link").click(function(e){
 	e.preventDefault();
-	shell.openExternal("https://discord.gg/Jhm3mDbh");
-});
-
-$(".website-link").click(function(e){
-	e.preventDefault();
-	shell.openExternal("https://www.swg-animus.com/");
-});
-
-$(".website-register-link").click(function(e){
-	e.preventDefault();
-	shell.openExternal("https://register.swg-animus.com/");
+	shell.openExternal("https://discord.gg/Tp8JyE5ypF");
 });
