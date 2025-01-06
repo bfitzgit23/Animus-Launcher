@@ -1,8 +1,8 @@
 {
-  "name": "SWG-Animus-Launcher",
+  "name": "SWG-PVP-Launcher",
   "version": "1.0.0",
   "author": "",
-  "authors": "SWG Animus",
+  "authors": "SWG PVP",
   "description": "SWG Launcher",
   "main": "index.js",
   "scripts": {
