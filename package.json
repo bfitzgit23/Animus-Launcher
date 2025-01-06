@@ -6,10 +6,10 @@
   "description": "SWG Launcher",
   "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "package": "npm run package",
+    "make": "npm run make"
   },
   "license": "ISC",
   "devDependencies": {
